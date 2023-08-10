@@ -7,7 +7,13 @@ const TabelaHead = (props) => (
     </tr>
     <tr>
       <th>ISBN</th>
-      <th>Título</th>
+      <th>
+        Título
+        <div className="container-setinhas">
+          <div onClick={ () => props.ordenarCrescente() }>&#129093;</div>
+          <div onCklick={ () => props.ordenarDecrescente() } >&#129095;</div>
+        </div>
+      </th>
       <th>Autor</th>
       <th></th>
     </tr>
