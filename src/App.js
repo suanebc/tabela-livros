@@ -35,9 +35,11 @@ class App extends Component {
     const livros = this.state.livros.sort((a, b) =>
     a.titulo < b.titulo ? -1 : 0
     );
-   //livros.reverse();
-    this.setState({livros});
+    const l = livros.reverse();
+    this.setState({l});
+    console.log(l)
   };
+
   render() {
 
     return (
